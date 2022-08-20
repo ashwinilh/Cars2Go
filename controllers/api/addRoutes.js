@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
     }
   });
 // Route to add new cars
-router.post('/add', async (req, res) => {
+router.post('/cars', async (req, res) => {
     // console.log("hit")
     try {
 

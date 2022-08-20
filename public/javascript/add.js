@@ -7,13 +7,13 @@ const addFormHandler = async (event) => {
     const price = document.querySelector('#add-price').value.trim();
     const mileage = document.querySelector('#add-mileage').value.trim();
     const condition = document.querySelector('#add-condition').value.trim();
-    const vin = document.querySelector('#add-vin').value.trim();
-    const link= document.querySelector('#add-link').value.trim();
+    const vin_number = document.querySelector('#add-vin').value.trim();
+    const image_name= document.querySelector('#add-link').value.trim();
 
-    if (make && model && year && price && mileage && condition && vin && link) {
+    if (make && model && year && price && mileage && condition && vin_number && image_name) {
       const response = await fetch('/api/add', {
         method: 'POST',
-        body: JSON.stringify({ make, model, year, price, mileage, condition, vin, link }),
+        body: JSON.stringify({ make, model, year, price, mileage, condition, vin_number, image_name }),
         headers: { 'Content-Type': 'application/json' },
       });
   
