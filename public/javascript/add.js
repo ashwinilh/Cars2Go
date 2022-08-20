@@ -11,7 +11,7 @@ const addFormHandler = async (event) => {
     const image_name= document.querySelector('#add-link').value.trim();
 
     if (make && model && year && price && mileage && condition && vin_number && image_name) {
-      const response = await fetch('/api/add', {
+      const response = await fetch('/api/cars', {
         method: 'POST',
         body: JSON.stringify({ make, model, year, price, mileage, condition, vin_number, image_name }),
         headers: { 'Content-Type': 'application/json' },
