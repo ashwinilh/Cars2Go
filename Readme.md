@@ -1,7 +1,10 @@
 Cars@go project-2
 # Deployed URL
 
+https://safe-river-61972.herokuapp.com/
 
+# Github URL
+https://github.com/ashwinilh/Cars2Go
 
 # Userstory
 
@@ -15,4 +18,4 @@ SO THAT my customers can come purchase the newest used cars from the lot.
 
 # Deployed 
 
-![Screenshot of App](/assets/images/DeployedApp.png)
+![Screenshot of App](./public/images/DeployedApp.jpg)
